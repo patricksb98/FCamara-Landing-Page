@@ -203,7 +203,47 @@ header label{
     padding: 1rem 0;
 }
 
+.about{
+    background: url("assets/images/about-bg2.png") no-repeat;
+    background-size: cover;
+    background-position: center;
+}
 
+.about .heading{
+    margin-top: 15rem;
+}
+
+.about .column{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.about .column .image{
+    flex: 1 1 40rem;
+}
+
+.about .column .image img{
+    width: 100%;
+}
+
+.about .column .content{
+    flex: 1 1 40rem;
+}
+
+.about .column .content h3{
+    font-family: var(--font-black);
+    font-size: 3rem;
+    color: var(--base-color-alt);
+    margin-top: -10rem;
+}
+
+.about .column .content p{
+    font-size: 1.2rem;
+    color: #333;
+    padding: 1rem 0;
+}
 
 
 
