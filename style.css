@@ -1,0 +1,28 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&family=Poppins:wght@100;200;300;400&display=swap');
+
+@font-face {
+    font-family: 'Metropolis Black';
+url('assets/fonts/Metropolis-Black.ttf') format('truetype');
+url('assets/fonts/Metropolis-Black.woff') format('woff'),
+}
+
+@font-face {
+    font-family: 'Metropolis Bold';
+url('assets/fonts/Metropolis-Bold.ttf') format('truetype');
+url('assets/fonts/Metropolis-Bold.woff') format('woff'),
+}
+
+:root{
+    /* colors */
+    --base-color: #fe4400;
+    --base-color-second: #FE662E;
+    --base-color-alt: #36357E;
+    --gradient:linear-gradient(90deg, var(--base-color), var(--base-color-second));
+
+    /* fonts */
+    --font-main: 'Montserrat', sans-serif;
+    --font-black: 'Metropolis Black', sans-serif;
+    --font-bold: 'Metropolis Bold', sans-serif;
+}
+
+
