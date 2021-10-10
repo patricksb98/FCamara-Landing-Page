@@ -17,6 +17,7 @@
     --base-color: #fe4400;
     --base-color-second: #FE662E;
     --base-color-alt: #36357E;
+    --base-color-alt-second: #5251A2;
     --gradient:linear-gradient(90deg, var(--base-color), var(--base-color-second));
 
     /* fonts */
@@ -31,7 +32,6 @@
     box-sizing: border-box;
     text-decoration: none;
     outline: none; border: none;
-    text-transform: capitalize;
 }
 
 *::selection{
@@ -48,6 +48,29 @@ body{
     background: #f9f9f9;
 }
 
+section{
+    min-height: 100vh;
+    padding: 0 15%;
+    padding-top: 7.5rem;
+}
+
+.btn{
+    display: inline-block;
+    margin-top: 1rem;
+    padding: .8rem 3rem;
+    border-radius: .5rem;
+    background:var(--base-color-alt-second);
+    font-size: 1.7rem;
+    color: #fff;
+    cursor: pointer;
+    box-shadow: 0 .5rem 1rem rgba(0,0,0,.1);
+    transition: all .0s linear;
+}
+
+.btn:hover{
+    background: var(--base-color-alt);
+}
+
 header{
     position: fixed;
     top: 0; left: 0;
@@ -61,19 +84,16 @@ header{
     z-index: 1000;
 }
 
-header .logo{
-    font-size: 2rem;
-    color: var(--base-color-second);
-}
-
-header .logo span{
-    color:var(--base-color);
+header svg{
+    fill: var(--base-color);
 }
 
 header .navbar a{
-    font-size: 1.7rem;
+    font-size: 1.5rem;
     margin-left: 2rem;
-    color:var(--base-color-second);
+    color: #333;
+    transition: .3s;
+    font-weight: 600;
 }
 
 header .navbar a:hover{
@@ -90,6 +110,37 @@ header label{
     cursor: pointer;
     visibility: hidden;
     opacity: 0;
+}
+
+.home{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background:url(assets/images/home-bg-img.png) no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.home .content h1{
+    font-family: var(--font-black);
+    font-size: 3.5rem;
+    color: var(--base-color-alt);
+}
+
+.home .content span{
+    font-family: var(--font-black);
+    color:var(--base-color);
+}
+
+.home .content p{
+    font-size: 1.5rem;
+    color: #666;
+    padding:1rem 0;
+}
+
+.home .image img{
+    width: 55rem;
+    padding-left: 2rem;
 }
 
 
@@ -116,6 +167,16 @@ header label{
     }
 
 }
+
+@media (max-width: 991px){
+
+    section{
+        padding: 0 3%;
+        padding-top: 7.5rem;
+    }
+
+}
+
 
 @media (max-width: 768px) {
 
@@ -153,6 +214,24 @@ header label{
     header input:checked ~ label::before {
         content: '\f00d';
     }
+
+    .home{
+        flex-flow: column-reverse;
+    }
+
+    .home .image img{
+        width: 100%;
+        padding-bottom: 2rem;
+    }
+
+    .home .content h3{
+        font-size: 3rem;
+    }
+
+    .home .content p{
+        font-size: 1.5rem;
+    }
+
 }
 
 @media (max-width: 450px){
