@@ -139,6 +139,7 @@ header label{
     font-size: 4rem;
     margin-top: 2rem;
     margin-bottom: 2rem;
+    max-width: 25.5rem;
 }
 
 .home .content span{
