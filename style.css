@@ -67,6 +67,7 @@ section{
     cursor: pointer;
     box-shadow: 0 .5rem 1rem rgba(0,0,0,.1);
     transition: all .0s linear;
+    margin-top: 2rem;
 }
 
 .btn:hover{
@@ -152,7 +153,6 @@ header label{
     font-size: 2.5rem;
     color: #333;
     padding:1rem 0;
-    margin-bottom: 2rem;
     font-weight: 500;
     max-width: 60rem;
 }
@@ -217,10 +217,6 @@ header label{
     background-overflow: visible;
 }
 
-.about .heading{
-    margin-top: 15rem;
-}
-
 .about .column{
     display: flex;
     align-items: center;
@@ -244,6 +240,7 @@ header label{
     font-family: var(--font-black);
     font-size: 4rem;
     color: var(--base-color-alt);
+    margin-bottom: 2rem;
 }
 
 .about .column .content p{
