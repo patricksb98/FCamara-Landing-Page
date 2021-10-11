@@ -62,7 +62,7 @@ section{
     padding: 1.5rem 3.5rem;
     border-radius: .5rem;
     background:var(--base-color-alt-second);
-    font-size: 1.3rem;
+    font-size: 1.5rem;
     color: #fff;
     cursor: pointer;
     box-shadow: 0 .5rem 1rem rgba(0,0,0,.1);
@@ -79,7 +79,7 @@ section{
     background: var(--gradient);
     color: transparent;
     -webkit-background-clip: text;
-    font-size: 3.5rem;
+    font-size: 5rem;
     padding: 1rem;
 }
 
@@ -136,24 +136,25 @@ header label{
 .home .content h1{
     font-family: var(--font-black);
     color: var(--base-color-alt);
-    font-size: 4rem;
+    font-size: 5rem;
     margin-top: 2rem;
     margin-bottom: 2rem;
-    max-width: 25.5rem;
+    max-width: 31.8rem;
 }
 
 .home .content span{
     font-family: var(--font-black);
     color:var(--base-color);
-    font-size: 3.5rem;
+    font-size: 4.5rem;
 }
 
 .home .content p{
-    font-size: 1.5rem;
+    font-size: 2.5rem;
     color: #333;
     padding:1rem 0;
     margin-bottom: 2rem;
     font-weight: 500;
+    max-width: 60rem;
 }
 
 .home .image img{
@@ -197,7 +198,7 @@ header label{
 }
 
 .measures p{
-    font-size: 2rem;
+    font-size: 2.5rem;
     text-align: center;
     padding-bottom: 2rem;
     font-weight: 500;
@@ -213,6 +214,7 @@ header label{
     background: url("assets/images/about-bg2.png") no-repeat;
     background-size: cover;
     background-position: center;
+    background-overflow: visible;
 }
 
 .about .heading{
@@ -240,19 +242,19 @@ header label{
 
 .about .column .content h3{
     font-family: var(--font-black);
-    font-size: 3rem;
+    font-size: 4rem;
     color: var(--base-color-alt);
 }
 
 .about .column .content p{
-    font-size: 1.5rem;
+    font-size: 2rem;
     color: #333;
     font-weight: 500;
     padding: 1rem 0;
 }
 
 .about .column .content span{
-    font-size: 1.5rem;
+    font-size: 2rem;
     color: var(--base-color);
     font-weight: 700;
 }
