@@ -290,7 +290,7 @@ footer .socials a svg:hover{
 
 .back-to-top {
     background: var(--base-color-alt-second);
-    color: var(--base-color-alt);
+    color: white;
 
     position: fixed;
     right: 2rem;
